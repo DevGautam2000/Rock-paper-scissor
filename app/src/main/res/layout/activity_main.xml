@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sbbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:id="@+id/Sbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scoreB"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ssbbg"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Score Board"
+            android:textColor="#FF0000"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/leftscore"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ssbbg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Player1: 0 pt"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rightScore"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ssbbg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Player2: 0pt"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ivl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sbl"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+
+             />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+       android:id="@+id/promptl"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/ivl"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:layout_marginTop="20dp">
+
+       <ImageButton
+           android:id="@+id/prev"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:padding="3dp"
+           android:background="@drawable/ssbbg"
+           android:src="@drawable/prev"/>
+
+       <TextView
+           android:id="@+id/prompt"
+           android:layout_width="175dp"
+           android:layout_height="wrap_content"
+           android:background="@drawable/ssbbg"
+           android:gravity="center"
+           android:padding="8dp"
+           android:text="Choose Object"
+           android:textColor="@color/teal_700"
+           android:textSize="20sp"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/imageView"/>
+
+       <ImageButton
+           android:id="@+id/next"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:background="@drawable/ssbbg"
+           android:padding="3dp"
+           android:src="@drawable/next"/>
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promptl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ssbbg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Play"
+        android:textColor="#009688"
+        app:backgroundTint="#FFEB3B" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ssbbg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Reset"
+        android:textColor="#009688"
+        app:backgroundTint="#FFEB3B" />
+
+
+</RelativeLayout>
